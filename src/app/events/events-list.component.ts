@@ -4,10 +4,12 @@ import { Component } from "@angular/core";
     selector: 'events-list',
     template: `
     <div>
-    <h2>Upcoming Angular Events</h2>
-    <hr>
-    <event-thumbnail (eventClick)="handleEventClicked($event)" [event]="event1"></event-thumbnail>
-</div>`
+        <h2>Upcoming Angular Events</h2>
+        <hr>
+        <event-thumbnail #thumbnail [event]="event1"></event-thumbnail>
+        <button class="btn btn-primary" (click)="thumbnail.logfoo()">Hi</button>
+        <h4>{{ thumbnail.propertyExample }}</h4>
+    </div>`
 })
 export class EventsListComponent {
     event1 = {
@@ -22,9 +24,5 @@ export class EventsListComponent {
             city: 'London',
             country: 'England'
         }
-    }
-
-    handleEventClicked(data:string) {
-        console.log('recieved:', data)
     }
 }
