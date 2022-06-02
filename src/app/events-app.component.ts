@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <div>
+      <nav-bar></nav-bar>
       <events-list></events-list>
     </div>
     `

@@ -21,10 +21,4 @@ import { Component, Input } from '@angular/core'
 })
 export class EventThumbnailComponent {
     @Input() event:any
-
-    propertyExample:any = "Use template variable to interact with child component";
-
-    logfoo() {
-        console.log('foo')
-    }
 }
