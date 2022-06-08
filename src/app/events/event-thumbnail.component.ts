@@ -26,8 +26,6 @@ import { Component, Input } from '@angular/core'
         .thumbnail { min-height: 210px; }
         .pad-left { margin-left: 5px;}
         .well div { color: #bbb; }
-        .green { color: #003300 !important;}
-        .bold { font-weight: bold; }
     `]
 })
 export class EventThumbnailComponent {
